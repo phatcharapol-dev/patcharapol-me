@@ -11,7 +11,7 @@ const Hero = () => {
                         <img src={ProfileImage} className="w-full rounded-full border-8 border-green-400 box-shadow-profile" />
                     </div>                                                     
                     <div className="font-bold font-mono">
-                        <h1 className="md:text-3xl text-xl pt-8 text-white ">PHATCHARAPHOL T</h1>                        
+                        <h1 className="md:text-3xl text-xl pt-8 text-white ">Phatcharapol T</h1>                        
                         <h2 className="md:text-xl text-base pb-5 text-gray-300">Software Developer</h2>
                     </div>
                     <SocialGroup/>

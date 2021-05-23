@@ -2,8 +2,9 @@ import React from 'react'
 import DropdownItem from './DropdownItem/DropdownItem'
 import bgDropdown from '../../images/bg_dropdown.jpg';
 function Dropdown( props ) {
-    return (
-        
+    
+
+    return (        
         <div className={ props.isOpen ? "block flex h-screen flex-col fixed w-full bg-no-repeat bg-center bg-cover" : "hidden"} style={{backgroundImage:`url(${bgDropdown})`}}>
             <div className="p-6 flex justify-end flex-row w-full" onClick={props.toggle}>
                 {/* <span className="font-bold text-green-500 md:text-5xl text-3xl duration-300">N</span> */}

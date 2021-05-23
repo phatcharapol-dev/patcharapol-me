@@ -5,20 +5,33 @@ import Dropdown from './components/Dropdown/Dropdown';
 
 function App() {
   const [isOpen,setIsOpen] = useState(false);
+  const [isTop,setIsTop] = useState(true);
 
   const toggle = () => {
     setIsOpen(!isOpen);
-    console.log("toggle")
   }
+
+  
 
   useEffect( () => {
     setIsOpen(false);
-    console.log("useEffect");
   },[])
+
+  useEffect( () => {
+    console.log('test')
+    window.onscroll = function() {
+      if(window.pageYOffset === 0) {
+        setIsTop(true);
+      }else{
+        setIsTop(false);
+      }
+    };
+    console.log(isTop);
+  });
 
   return (
     <>
-      <Nav toggle={toggle}/>
+      <Nav isTop={isTop} toggle={toggle}/>
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <Routing/>
       
