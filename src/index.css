@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .box-shadow-profile{
+    box-shadow:0 0 0 15px #c5e6cf4a;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* .social-icon svg {
+  width:1em !important;
 }
+.social-icon{
+  border-radius:50%;
+  
+}
+.bg-home .profile-detail {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-home .profile-image{
+  box-shadow:0 0 0 20px #c5e6cf4a;
+} */
+/* section.bg-home {
+  @apply top-0 absolute bg-gray-800 bg-opacity-90 h-full w-full;
+}
+section.bg-home .profile-detail{
+  @apply text-center text-white w-1/3 rounded-lg m-auto bg-gray-800 px-4 py-16;
+}
+section.bg-home .profile-image{
+  @apply m-auto rounded-full w-7/12 border-8  border-green-400;
+}
+section.bg-home .profile-name{
+  @apply mt-8 text-2xl uppercase
+}
+section.bg-home .profile-job{
+  @apply mt-4 w-full text-xl
+}
+section.bg-home .social-group{
+  @apply w-full mt-8
+}
+section.bg-home .social-icon{
+  @apply cursor-pointer hover:bg-green-400 hover:border-green-400 inline-block border-2 border-white text-2xl mx-2 px-2 py-1
+} */
