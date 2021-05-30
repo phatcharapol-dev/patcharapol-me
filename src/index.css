@@ -7,42 +7,97 @@
     box-shadow:0 0 0 15px #c5e6cf4a;
   }
 }
+/* ------------------------------------ Global Tag ------------------------------------*/
+h1{
+  @apply md:text-4xl text-3xl font-bold text-blue-custom;
+}
+h3{
+  @apply md:text-3xl text-2xl font-bold text-blue-custom;
+}
+h4{
+  @apply md:text-2xl text-xl font-bold text-blue-custom;
+}
+h5{
+  @apply md:text-xl text-lg font-bold text-blue-custom ;
+}
+p,li{
+  @apply md:text-base text-sm text-white-custom leading-loose;
+}
 
+/* ------------------------------------ Button ------------------------------------*/
+.btn-outline{
+  @apply mt-6 cursor-pointer flex justify-center items-center md:w-40 md:h-12 w-40 h-10 border-blue-custom rounded-md p-2 duration-300 text-blue-custom hover:text-white-custom hover:bg-blue-custom border-2;
+}
+.btn-full{
+  @apply mt-6 cursor-pointer flex justify-center items-center md:w-40 md:h-12 w-40 h-10 border-blue-custom  rounded-md p-2 duration-300 text-white-custom bg-blue-custom ;
+}
 
-/* .social-icon svg {
-  width:1em !important;
+/* ------------------------------------ Nav Section ------------------------------------*/
+.nav{
+  @apply flex items-center justify-between w-full h-20 fixed z-20  duration-300  text-lg;
+}
+.nav-items{
+  @apply p-4 text-white-custom hover:text-blue-custom duration-300;
+}
+
+.logo{
+  @apply font-bold text-blue-custom md:text-2xl text-xl;
+}
+
+/* ------------------------------------ Hero Section ------------------------------------*/
+.hero{
+  @apply h-screen object-center object-cover flex justify-center text-white-custom;
+}
+.bg-video{
+  @apply object-cover h-screen w-full absolute left-0 top-0 z-0;
+}
+.hero-content{
+  @apply w-full flex justify-center items-center flex-col z-10;
+}
+.profile-image{
+  @apply w-full rounded-full border-8 border-blue-custom box-shadow-profile;
+}
+.social-group{
+  @apply flex justify-between items-center;
 }
 .social-icon{
-  border-radius:50%;
-  
+  @apply rounded-full cursor-pointer text-blue-custom hover:text-white-custom hover:bg-blue-custom border-2 border-blue-custom  md:text-2xl text-xl md:h-11 md:w-11 h-10 w-10 flex items-center justify-center duration-300;
 }
-.bg-home .profile-detail {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+/* ------------------------------------ Global Section ------------------------------------*/
+.section {
+  @apply h-full w-full md:py-20 py-16;
 }
-.bg-home .profile-image{
-  box-shadow:0 0 0 20px #c5e6cf4a;
-} */
-/* section.bg-home {
-  @apply top-0 absolute bg-gray-800 bg-opacity-90 h-full w-full;
+
+/* ------------------------------------ About Section ------------------------------------*/
+.about{
+  @apply bg-black-custom;
 }
-section.bg-home .profile-detail{
-  @apply text-center text-white w-1/3 rounded-lg m-auto bg-gray-800 px-4 py-16;
+.education-box{
+  @apply pt-2 text-white-custom;
 }
-section.bg-home .profile-image{
-  @apply m-auto rounded-full w-7/12 border-8  border-green-400;
+.interest-box{
+  @apply md:text-2xl text-xl text-white-custom m-2 p-4 bg-gray-custom rounded-md shadow-2xl ;
 }
-section.bg-home .profile-name{
-  @apply mt-8 text-2xl uppercase
+
+/* ------------------------------------ Experience Section ------------------------------------*/
+.experience{
+  @apply bg-gray-custom ;
 }
-section.bg-home .profile-job{
-  @apply mt-4 w-full text-xl
+.company-box{
+  @apply text-left p-4  rounded-md bg-black-custom;
 }
-section.bg-home .social-group{
-  @apply w-full mt-8
+/* ------------------------------------ Skills Section ------------------------------------*/
+.skills{
+  @apply bg-black-custom;
 }
-section.bg-home .social-icon{
-  @apply cursor-pointer hover:bg-green-400 hover:border-green-400 inline-block border-2 border-white text-2xl mx-2 px-2 py-1
-} */
+.skills-box{
+  @apply md:text-5xl text-3xl text-blue-custom;
+}
+/* ------------------------------------ Portfolio Section ------------------------------------*/
+.portfolio{
+  @apply bg-gray-custom ;
+}
+.portfolio-box{
+  @apply rounded-md bg-black-custom shadow-lg p-4 md:m-6 my-4 md:px-10;
+}
