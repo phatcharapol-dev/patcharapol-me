@@ -15,6 +15,7 @@ module.exports = {
       },
       screens: {
         xs: { max: "420px" },
+        md: { min: "769px" },
         // => @media (min-width: 425) { ... }
       },
     },
