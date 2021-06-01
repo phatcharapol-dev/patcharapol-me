@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/patcharapol-me/static/css/main.115c0b93.chunk.css",
-    "main.js": "/patcharapol-me/static/js/main.afe72f9a.chunk.js",
-    "main.js.map": "/patcharapol-me/static/js/main.afe72f9a.chunk.js.map",
+    "main.js": "/patcharapol-me/static/js/main.39208974.chunk.js",
+    "main.js.map": "/patcharapol-me/static/js/main.39208974.chunk.js.map",
     "runtime-main.js": "/patcharapol-me/static/js/runtime-main.2c8ad19e.js",
     "runtime-main.js.map": "/patcharapol-me/static/js/runtime-main.2c8ad19e.js.map",
     "static/js/2.abb6c8ce.chunk.js": "/patcharapol-me/static/js/2.abb6c8ce.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2c8ad19e.js",
     "static/js/2.abb6c8ce.chunk.js",
     "static/css/main.115c0b93.chunk.css",
-    "static/js/main.afe72f9a.chunk.js"
+    "static/js/main.39208974.chunk.js"
   ]
 }
