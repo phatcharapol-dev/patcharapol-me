@@ -1,8 +1,8 @@
 import React from "react";
 import Portfolio from "./Portfolio/Portfolio";
-const SrisereeProject = "/images/portfolio/sriseree.png";
-const AnimeProject = "/images/portfolio/anime-database.png";
-const TpmProject = "/images/portfolio/tpm.png";
+const SrisereeProject = `${process.env.PUBLIC_URL}/sriseree.png`;
+const AnimeProject = `${process.env.PUBLIC_URL}/anime-database.png`;
+const TpmProject = `${process.env.PUBLIC_URL}/tpm.png`;
 
 function Portfolios() {
   const projectsProp = [

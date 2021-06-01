@@ -46,13 +46,14 @@ function App() {
         toggleMode={toggleMode}
       />
       <Dropdown isOpen={isOpen} toggle={toggle} isDarkMode={isDarkMode} />
-      <Switch>
+      <Home isDarkMode={isDarkMode} />
+      {/* <Switch>
         <Route
-          path="/"
+          path="/patcharapol-me"
           exact
           component={() => <Home isDarkMode={isDarkMode} />}
         />
-      </Switch>
+      </Switch> */}
     </>
   );
 }
