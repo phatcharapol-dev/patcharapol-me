@@ -1,17 +1,19 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        // #8E8E8E
-        // 0d7377
-        "black-custom": "#232931",
-        "gray-custom": "#393e46",
-        "blue-custom": "#3fc1c9",
-        "white-custom": "#eeeeee",
-        // #191919
-        // 212121
+        // Main Color
+        "black-main": "#232931",
+        "blue-main": "#3fc1c9",
+        "white-main": "#eeeeee",
+
+        // For Dark Theme
+        "gray-dark": "#393e46",
+        // For White Theme
+        "gray-light": "#F4FFFF",
+        "blue-light": "#E4FBFF",
       },
       screens: {
         xs: { max: "420px" },
@@ -28,6 +30,9 @@ module.exports = {
         "2xl": "6rem",
       },
       center: true,
+    },
+    fontFamily: {
+      sans: ['"PT Sans"', "sans-serif"],
     },
   },
   variants: {

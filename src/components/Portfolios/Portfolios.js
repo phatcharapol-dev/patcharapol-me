@@ -5,8 +5,6 @@ import AnimeProject from "../../images/portfolio/anime-database.png";
 import TpmProject from "../../images/portfolio/tpm.png";
 
 function Portfolios() {
-  let projectName = `Sriseree Co., Ltd`;
-
   const projectsProp = [
     {
       name: "Sriseree",

@@ -16,14 +16,14 @@ function Portfolio(props) {
         <p className="py-2">Stack:{props.stack}</p>
         <div className="flex xs:flex-col lg:flex-row md:flex-col flex-row justify-start w-full">
           <div className="btn-outline">
-            <p className="pr-2">View Source</p>
+            <span className="pr-2">View Source</span>
             <FontAwesomeIcon
               className="text-2xl ml-2"
               icon={["fab", "github"]}
             />
           </div>
           <div className="btn-full lg:ml-5 md:ml-0 xs:ml-0 ml-5">
-            <p className="pr-2">Visit Site</p>
+            <span className="pr-2">Visit Site</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="md:h-5 md:w-6 h-4 w-5"

@@ -1,24 +1,24 @@
 import React from "react";
 import DropdownItem from "./DropdownItem/DropdownItem";
-import bgDropdown from "../../images/bg_dropdown.jpg";
 function Dropdown(props) {
+  const bgColor = props.isDarkMode ? "bg-black-main" : "bg-gray-light";
   return (
     <div
       className={
         props.isOpen
-          ? "flex h-screen z-30 flex-col fixed w-full bg-no-repeat bg-center bg-cover"
+          ? `flex h-screen z-40 flex-col fixed w-full text-black-main dark:text-white-main ${bgColor}`
           : "hidden"
       }
-      style={{ backgroundImage: `url(${bgDropdown})` }}
+      // style={{ backgroundImage: `url(${bgDropdown})` }}
     >
       <div
         className="p-6 flex justify-end flex-row w-full"
         onClick={props.toggle}
       >
-        {/* <span className="font-bold text-gray-custom md:text-5xl text-3xl duration-300">N</span> */}
+        {/* <span className="font-bold text-gray-dark md:text-5xl text-3xl duration-300">N</span> */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white-custom cursor-pointer hover:h-7 hover:w-7 duration-300"
+          className="h-6 w-6  cursor-pointer hover:h-7 hover:w-7 duration-300"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -32,23 +32,20 @@ function Dropdown(props) {
         </svg>
       </div>
       <div className="flex justify-center flex-col items-center w-full h-full">
-        <DropdownItem toggle={props.toggle} link="/" exact>
+        <DropdownItem toggle={props.toggle} goto="hero">
           Home
         </DropdownItem>
-        <DropdownItem toggle={props.toggle} link="/about">
+        <DropdownItem toggle={props.toggle} goto="about">
           About
         </DropdownItem>
-        <DropdownItem toggle={props.toggle} link="/skill">
-          Skill
+        <DropdownItem toggle={props.toggle} goto="experience">
+          Experience
         </DropdownItem>
-        <DropdownItem toggle={props.toggle} link="/resume">
-          Resume
+        <DropdownItem toggle={props.toggle} goto="skills">
+          Skills
         </DropdownItem>
-        <DropdownItem toggle={props.toggle} link="/portfolio">
-          Portfolio
-        </DropdownItem>
-        <DropdownItem toggle={props.toggle} link="/contact">
-          Contact
+        <DropdownItem toggle={props.toggle} goto="portfolios">
+          Portfolios
         </DropdownItem>
       </div>
     </div>

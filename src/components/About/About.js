@@ -1,7 +1,5 @@
 import React from "react";
-import profileImg from "../../images/profile_img.png";
 import Interests from "./Interests/Interests";
-import SocialGroup from "./SocialGroup/SocialGroup";
 import Educations from "./Educations/Educations";
 
 function About() {
@@ -44,10 +42,10 @@ function About() {
               </div>
             </div>
             <div className="btn-outline">
-              <p className="pr-2">Download CV</p>
+              <span className="pr-2">Download CV</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="animate-bounce md:h-6 md:w-6 h-5 w-5"
+                className="md:h-6 md:w-6 h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

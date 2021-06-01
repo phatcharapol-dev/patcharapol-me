@@ -1,18 +1,20 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-
+import { Link } from "react-scroll";
 function DropdownItem(props) {
   return (
-    <div className="py-4">
-      <NavLink
-        className="text-gray-custom text-xl"
-        exact={props.exact}
-        to={props.link}
-        activeClassName="text-blue-custom text-2xl"
+    <div className="py-4 text-lg">
+      <Link
+        to={props.goto}
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="dropdown-items cursor-pointer"
+        activeClass="underline"
         onClick={props.toggle}
+        style={{ textUnderlineOffset: "1rem" }}
       >
         {props.children}
-      </NavLink>
+      </Link>
     </div>
   );
 }
