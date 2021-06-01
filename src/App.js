@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./components/Nav/Nav";
 import Dropdown from "./components/Dropdown/Dropdown";
-import { Switch, Route } from "react-router-dom";
+// import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     setIsOpen(false);
-    setIsDarkMode(false);
+    // setIsDarkMode(false);
   }, []);
 
   // useEffect(() => {
@@ -46,15 +46,15 @@ function App() {
         toggleMode={toggleMode}
       />
       <Dropdown isOpen={isOpen} toggle={toggle} isDarkMode={isDarkMode} />
-      {/* <Home isDarkMode={isDarkMode} /> */}
-      <Switch>
+      <Home isDarkMode={isDarkMode} />
+      {/* <Switch>
         <Route
           path="/patcharapol-me"
           exact
           component={() => <Home isDarkMode={isDarkMode} />}
         />
         <Route path="/" component={() => <Home isDarkMode={isDarkMode} />} />
-      </Switch>
+      </Switch> */}
     </>
   );
 }

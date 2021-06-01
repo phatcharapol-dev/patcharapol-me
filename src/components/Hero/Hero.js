@@ -3,17 +3,19 @@ import SocialGroup from "../About/SocialGroup/SocialGroup";
 // import bgHero from "../../images/bg_hero_grey.jpg";
 const bgVideoDark = `${process.env.PUBLIC_URL}/bg-video-dark.mp4`;
 const bgVideoLight = `${process.env.PUBLIC_URL}/bg-video-light.mp4`;
-const profileImg = `${process.env.PUBLIC_URL}/profile_img.png`;
+const profileImg = `${process.env.PUBLIC_URL}/profile_img.jpg`;
 const Hero = (props) => {
   const bgVideo = props.isDarkMode ? bgVideoDark : bgVideoLight;
   return (
-    <section className="hero">
+    <section className="hero ">
       <video
         allow="autoplay"
         autoPlay={true}
         loop
+        playsInline
         // poster={bgHero}
         className="bg-video"
+        key={bgVideo}
       >
         <source src={bgVideo} type="video/mp4" />
       </video>
