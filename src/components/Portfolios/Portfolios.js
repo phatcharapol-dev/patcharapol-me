@@ -1,8 +1,8 @@
 import React from "react";
 import Portfolio from "./Portfolio/Portfolio";
-import SrisereeProject from "../../images/portfolio/sriseree.png";
-import AnimeProject from "../../images/portfolio/anime-database.png";
-import TpmProject from "../../images/portfolio/tpm.png";
+const SrisereeProject = "/images/portfolio/sriseree.png";
+const AnimeProject = "/images/portfolio/anime-database.png";
+const TpmProject = "/images/portfolio/tpm.png";
 
 function Portfolios() {
   const projectsProp = [

@@ -1,10 +1,9 @@
 import React from "react";
 import SocialGroup from "../About/SocialGroup/SocialGroup";
 // import bgHero from "../../images/bg_hero_grey.jpg";
-import bgVideoDark from "../../images/bg-video-dark.mp4";
-import bgVideoLight from "../../images/bg-video-light.mp4";
-import profileImg from "../../images/profile_img.png";
-
+const bgVideoDark = "/images/bg-video-dark.mp4";
+const bgVideoLight = "/images/bg-video-light.mp4";
+const profileImg = "/images/profile_img.png";
 const Hero = (props) => {
   const bgVideo = props.isDarkMode ? bgVideoDark : bgVideoLight;
   return (
