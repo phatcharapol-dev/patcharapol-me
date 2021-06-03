@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/patcharapol-me/static/css/main.67e5f10d.chunk.css",
-    "main.js": "/patcharapol-me/static/js/main.d0c2a266.chunk.js",
-    "main.js.map": "/patcharapol-me/static/js/main.d0c2a266.chunk.js.map",
+    "main.css": "/patcharapol-me/static/css/main.85c28b0d.chunk.css",
+    "main.js": "/patcharapol-me/static/js/main.f0ea5738.chunk.js",
+    "main.js.map": "/patcharapol-me/static/js/main.f0ea5738.chunk.js.map",
     "runtime-main.js": "/patcharapol-me/static/js/runtime-main.75224555.js",
     "runtime-main.js.map": "/patcharapol-me/static/js/runtime-main.75224555.js.map",
-    "static/js/2.ce36b4ff.chunk.js": "/patcharapol-me/static/js/2.ce36b4ff.chunk.js",
-    "static/js/2.ce36b4ff.chunk.js.map": "/patcharapol-me/static/js/2.ce36b4ff.chunk.js.map",
+    "static/js/2.6cd8a1f0.chunk.js": "/patcharapol-me/static/js/2.6cd8a1f0.chunk.js",
+    "static/js/2.6cd8a1f0.chunk.js.map": "/patcharapol-me/static/js/2.6cd8a1f0.chunk.js.map",
     "static/js/3.eb93d2d1.chunk.js": "/patcharapol-me/static/js/3.eb93d2d1.chunk.js",
     "static/js/3.eb93d2d1.chunk.js.map": "/patcharapol-me/static/js/3.eb93d2d1.chunk.js.map",
     "index.html": "/patcharapol-me/index.html",
-    "static/css/main.67e5f10d.chunk.css.map": "/patcharapol-me/static/css/main.67e5f10d.chunk.css.map",
-    "static/js/2.ce36b4ff.chunk.js.LICENSE.txt": "/patcharapol-me/static/js/2.ce36b4ff.chunk.js.LICENSE.txt"
+    "static/css/main.85c28b0d.chunk.css.map": "/patcharapol-me/static/css/main.85c28b0d.chunk.css.map",
+    "static/js/2.6cd8a1f0.chunk.js.LICENSE.txt": "/patcharapol-me/static/js/2.6cd8a1f0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.75224555.js",
-    "static/js/2.ce36b4ff.chunk.js",
-    "static/css/main.67e5f10d.chunk.css",
-    "static/js/main.d0c2a266.chunk.js"
+    "static/js/2.6cd8a1f0.chunk.js",
+    "static/css/main.85c28b0d.chunk.css",
+    "static/js/main.f0ea5738.chunk.js"
   ]
 }
