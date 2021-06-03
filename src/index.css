@@ -9,7 +9,7 @@
 }
 /* ------------------------------------ Global Tag ------------------------------------*/
 h1{
-  @apply md:text-4xl text-3xl font-bold text-blue-main;
+  @apply md:text-4xl md:py-4 py-2 text-3xl font-bold text-blue-main;
 }
 h3{
   @apply md:text-3xl text-2xl font-bold text-blue-main;
@@ -34,7 +34,7 @@ p,li{
 
 /* ------------------------------------ Nav Section ------------------------------------*/
 .nav{
-  @apply flex items-center justify-between text-black-main dark:text-white-main bg-gray-light dark:bg-black-main w-full md:h-20 h-16 fixed z-20  duration-300  text-lg;
+  @apply flex items-center justify-between text-black-main dark:text-white-main bg-gray-light dark:bg-black-main w-full h-20 fixed z-20  duration-300  text-lg;
 }
 .nav-items{
   @apply p-4 hover:underline duration-300;
@@ -55,18 +55,18 @@ p,li{
   @apply w-full flex justify-center items-center flex-col z-10;
 }
 .profile-image{
-  @apply w-full rounded-full border-8 border-blue-main box-shadow-profile;
+  @apply w-full rounded-full;
 }
 .social-group{
   @apply flex justify-between items-center;
 }
 .social-icon{
-  @apply rounded-full cursor-pointer text-blue-main hover:text-white-main hover:bg-blue-main border-2 border-blue-main  md:text-2xl text-xl md:h-11 md:w-11 h-10 w-10 flex items-center justify-center duration-300;
+  @apply rounded-full cursor-pointer text-white-main hover:text-white-main hover:bg-blue-main border-2 border-blue-main  md:text-2xl text-xl md:h-11 md:w-11 h-10 w-10 flex items-center justify-center duration-300;
 }
 
 /* ------------------------------------ Global Section ------------------------------------*/
 .section {
-  @apply h-full w-full md:py-32 py-24;
+  @apply h-full w-full py-24;
 }
 
 /* ------------------------------------ About Section ------------------------------------*/

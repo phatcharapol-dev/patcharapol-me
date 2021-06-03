@@ -1,6 +1,19 @@
-import React from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../Theme/ThemeContext";
 
 function SwitchToggle(props) {
+  const [isDarkMode, setIsDarkMode] = useContext(ThemeContext);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+
+    if (!isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
   const darkMode = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -34,13 +47,10 @@ function SwitchToggle(props) {
       />
     </svg>
   );
-  const mode = props.isDarkMode ? darkMode : lightMode;
+  const mode = isDarkMode ? darkMode : lightMode;
   return (
     // fixed bottom-0 right-0 p-2 bg-white-main mr-5 mb-5
-    <div
-      className="rounded-full cursor-pointer z-30"
-      onClick={props.toggleMode}
-    >
+    <div className="rounded-full cursor-pointer z-30" onClick={toggleTheme}>
       <div className="flex justify-center items-center md:w-6 md:h-6 w-6 h-6 text-blue-main">
         {mode}
       </div>

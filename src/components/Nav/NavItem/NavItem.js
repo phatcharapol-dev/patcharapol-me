@@ -5,10 +5,12 @@ import { Link } from "react-scroll";
 function NavItem(props) {
   return (
     <Link
+      key={props.children}
       to={props.goto}
       spy={true}
       smooth={true}
       duration={500}
+      offset={-50}
       className="nav-items cursor-pointer"
       activeClass="underline"
       style={{ textUnderlineOffset: "1rem" }}

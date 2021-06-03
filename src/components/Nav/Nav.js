@@ -2,15 +2,13 @@ import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import NavItem from "./NavItem/NavItem";
 
 function Nav(props) {
-  let bgNavColor = props.isTop ? "bg-opacity-0" : "shadow-lg";
-
   return (
-    <nav className={`nav ${bgNavColor} `} role="navigation">
+    <nav className={`nav`} role="navigation">
       <div className="container">
         <div className="flex items-center justify-between">
           {/* <span className="logo">{`< pcrpt />`}</span> */}
           <div
-            className="block cursor-pointer md:hidden text-blue-main"
+            className="block cursor-pointer md:hidden text-blue-main text-lg"
             onClick={props.toggle}
           >
             <svg
@@ -35,10 +33,7 @@ function Nav(props) {
             <NavItem goto="skills">Skills</NavItem>
             <NavItem goto="portfolios">Portfolios</NavItem>
           </div>
-          <SwitchToggle
-            isDarkMode={props.isDarkMode}
-            toggleMode={props.toggleMode}
-          />
+          <SwitchToggle className="text-lg" />
         </div>
       </div>
     </nav>

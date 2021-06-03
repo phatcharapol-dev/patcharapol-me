@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import SocialGroup from "../About/SocialGroup/SocialGroup";
-// import bgHero from "../../images/bg_hero_grey.jpg";
+import { ThemeContext } from "../Theme/ThemeContext";
+
 const bgVideoDark = `${process.env.PUBLIC_URL}/bg-video-dark.mp4`;
 const bgVideoLight = `${process.env.PUBLIC_URL}/bg-video-light.mp4`;
 const profileImg = `${process.env.PUBLIC_URL}/profile_img.jpg`;
-const Hero = (props) => {
-  const bgVideo = props.isDarkMode ? bgVideoDark : bgVideoLight;
+
+const Hero = () => {
+  const [isDarkMode] = useContext(ThemeContext);
+  const bgVideo = isDarkMode ? bgVideoDark : bgVideoLight;
   return (
     <section className="hero ">
+      <div className="h-screen w-full absolute z-10 opacity-40 bg-black"></div>
       <video
         allow="autoplay"
         autoPlay={true}
@@ -29,8 +33,8 @@ const Hero = (props) => {
             />
           </div>
           <div className="font-bold">
-            <h3 className="pt-8">Patcharaphol T</h3>
-            <h4 className="pb-5">Software Developer</h4>
+            <h3 className="pt-8 text-white">Patcharaphol T</h3>
+            <h4 className="pb-5 text-gray-300">Software Developer</h4>
           </div>
           <SocialGroup />
         </div>

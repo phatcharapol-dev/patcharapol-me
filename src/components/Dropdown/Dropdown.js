@@ -1,22 +1,19 @@
 import React from "react";
 import DropdownItem from "./DropdownItem/DropdownItem";
 function Dropdown(props) {
-  const bgColor = props.isDarkMode ? "bg-black-main" : "bg-gray-light";
   return (
     <div
       className={
         props.isOpen
-          ? `flex h-screen z-40 flex-col fixed w-full text-black-main dark:text-white-main ${bgColor}`
+          ? `flex h-screen z-40 flex-col fixed w-full text-black-main dark:text-white-main bg-gray-light dark:bg-black-main`
           : "hidden"
       }
       // style={{ backgroundImage: `url(${bgDropdown})` }}
     >
-      <div
-        className="p-6 flex justify-end flex-row w-full"
-        onClick={props.toggle}
-      >
+      <div className="p-6 flex justify-end flex-row w-full">
         {/* <span className="font-bold text-gray-dark md:text-5xl text-3xl duration-300">N</span> */}
         <svg
+          onClick={props.toggle}
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6  cursor-pointer hover:h-7 hover:w-7 duration-300"
           fill="none"

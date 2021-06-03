@@ -11,21 +11,22 @@ function Portfolios() {
       description: "Back Office Transport System",
       stack: "HTML5, CSS3, JS, Magento, jQuery, AJAX, Bootstrap",
       img: SrisereeProject,
-      source: "https://www.github.com/phatcharapol.dev",
     },
     {
       name: "Thongpratheep Machinery Part., Ltd.",
       description: "Company Website Responsive",
       stack: "HTML5, CSS3, JS,jQuery, AJAX, Bootstrap",
       img: TpmProject,
-      source: "https://www.github.com/phatcharapol.dev",
+      source: "https://github.com/phatcharapol-dev/tpm-website",
+      link: "https://www.tpm-machinery.com/",
     },
     {
       name: "The Anime Databae",
       description: "Mini Project",
       stack: "ReactJS, Material UI",
       img: AnimeProject,
-      source: "https://www.github.com/phatcharapol.dev",
+      source: "https://github.com/phatcharapol-dev",
+      link: "https://www.tpm-machinery.com/",
     },
   ];
 
@@ -37,6 +38,7 @@ function Portfolios() {
         stack={project.stack}
         image={project.img}
         source={project.source}
+        link={project.link}
         key={index}
       />
     );

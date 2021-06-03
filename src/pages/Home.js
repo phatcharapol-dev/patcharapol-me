@@ -6,11 +6,11 @@ import Portfolios from "../components/Portfolios/Portfolios";
 import Skills from "../components/Skills/Skills";
 import { Element } from "react-scroll";
 
-function Home(props) {
+function Home() {
   return (
     <>
       <Element name="hero" className="element">
-        <Hero isDarkMode={props.isDarkMode} />
+        <Hero />
       </Element>
       <Element name="about" className="element">
         <About />

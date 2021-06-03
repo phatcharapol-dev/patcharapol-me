@@ -9,9 +9,11 @@ library.add(fas, fab, far);
 
 const SocialIcon = (props) => {
   return (
-    <div className="social-icon">
-      <FontAwesomeIcon icon={["fab", props.icon]} />
-    </div>
+    <>
+      <a className="social-icon" href={props.link}>
+        <FontAwesomeIcon icon={["fab", props.icon]} />
+      </a>
+    </>
   );
 };
 
