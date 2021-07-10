@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../Theme/ThemeContext";
 
 function SwitchToggle(props) {
@@ -51,7 +51,7 @@ function SwitchToggle(props) {
   return (
     // fixed bottom-0 right-0 p-2 bg-white-main mr-5 mb-5
     <div className="rounded-full cursor-pointer z-30" onClick={toggleTheme}>
-      <div className="flex justify-center items-center md:w-6 md:h-6 w-6 h-6 text-blue-main">
+      <div className="flex justify-center items-center md:w-6 md:h-6 w-6 h-6 dark:text-white-main">
         {mode}
       </div>
     </div>

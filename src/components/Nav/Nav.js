@@ -2,13 +2,16 @@ import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import NavItem from "./NavItem/NavItem";
 
 function Nav(props) {
+  const classNav = props.isTop
+    ? `flex items-center justify-between text-white-main bg-transparent	 w-full h-20 fixed z-20  duration-300  text-lg`
+    : `nav`;
   return (
-    <nav className={`nav`} role="navigation">
+    <nav className={classNav} role="navigation">
       <div className="container">
         <div className="flex items-center justify-between">
           {/* <span className="logo">{`< pcrpt />`}</span> */}
           <div
-            className="block cursor-pointer md:hidden text-blue-main text-lg"
+            className="block cursor-pointer md:hidden dark:text-white-main text-lg"
             onClick={props.toggle}
           >
             <svg

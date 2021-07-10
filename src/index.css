@@ -34,10 +34,10 @@ p,li{
 
 /* ------------------------------------ Nav Section ------------------------------------*/
 .nav{
-  @apply flex items-center justify-between text-black-main dark:text-white-main bg-gray-light dark:bg-black-main w-full h-20 fixed z-20  duration-300  text-lg;
+  @apply flex items-center justify-between text-black-main dark:text-white-main bg-gray-light dark:bg-black-main w-full h-20 fixed z-20 text-lg;
 }
 .nav-items{
-  @apply p-4 hover:underline duration-300;
+  @apply p-4 hover:underline;
 }
 
 .logo{

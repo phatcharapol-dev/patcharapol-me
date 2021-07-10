@@ -5,6 +5,7 @@ import { ThemeProvider } from "./components/Theme/ThemeContext";
 import Home from "./pages/Home";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isTop, setIsTop] = useState(true);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -14,10 +15,19 @@ function App() {
     setIsOpen(false);
   }, []);
 
+  window.onscroll = () => {
+    // Check Top Page
+    if (window.pageYOffset === 0) {
+      setIsTop(true);
+    } else {
+      setIsTop(false);
+    }
+  };
+
   return (
     <>
       <ThemeProvider>
-        <Nav toggle={toggle} />
+        <Nav isTop={isTop} toggle={toggle} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Home />
       </ThemeProvider>
