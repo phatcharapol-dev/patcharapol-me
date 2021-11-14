@@ -4,24 +4,38 @@
 
 @layer utilities {
   .box-shadow-profile{
-    box-shadow:0 0 0 15px #c5e6cf4a;
+    box-shadow:0 0 0 10px #00E9F5;
   }
 }
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
 /* ------------------------------------ Global Tag ------------------------------------*/
+
 h1{
-  @apply md:text-4xl md:py-4 py-2 text-3xl font-bold text-blue-main;
+  @apply md:text-4xl md:py-4 py-2 text-3xl;
 }
 h3{
-  @apply md:text-3xl text-2xl font-bold text-blue-main;
+  @apply md:text-3xl text-2xl;
 }
 h4{
-  @apply md:text-2xl text-xl font-bold text-blue-main;
+  @apply md:text-2xl text-xl;
 }
 h5{
-  @apply md:text-xl text-lg font-bold text-blue-main ;
+  @apply md:text-xl text-lg ;
 }
 p,li{
-  @apply md:text-base text-sm text-black-main dark:text-white-main leading-loose;
+  @apply md:text-base text-sm text-black-main dark:text-white-main;
+  line-height: 2rem;
+}
+h1,h2,h3,h4,h5{
+  @apply font-bold text-black-main dark:text-white-main;
+  line-height: 3rem;
 }
 
 /* ------------------------------------ Button ------------------------------------*/
@@ -34,7 +48,7 @@ p,li{
 
 /* ------------------------------------ Nav Section ------------------------------------*/
 .nav{
-  @apply flex items-center justify-between text-black-main dark:text-white-main bg-gray-light dark:bg-black-main w-full h-20 fixed z-20 text-lg;
+  @apply flex items-center justify-between bg-blue-main text-white-main  w-full h-20 fixed z-20 text-lg;
 }
 .nav-items{
   @apply p-4 hover:underline;
@@ -52,7 +66,7 @@ p,li{
   @apply object-cover h-screen w-full absolute left-0 top-0 z-0;
 }
 .hero-content{
-  @apply w-full flex justify-center items-center flex-col z-10;
+  @apply w-full flex justify-center items-center flex-col z-10 text-center;
 }
 .profile-image{
   @apply w-full rounded-full;
@@ -62,6 +76,7 @@ p,li{
 }
 .social-icon{
   @apply rounded-full cursor-pointer text-white-main hover:text-white-main hover:bg-blue-main border-2 border-blue-main  md:text-2xl text-xl md:h-11 md:w-11 h-10 w-10 flex items-center justify-center duration-300;
+  margin:0 5px;
 }
 
 /* ------------------------------------ Global Section ------------------------------------*/
@@ -85,7 +100,7 @@ p,li{
   @apply bg-blue-light dark:bg-gray-dark ;
 }
 .company-box{
-  @apply text-left p-4  rounded-md bg-gray-light dark:bg-black-main shadow-lg;
+  @apply text-left p-8  rounded-md bg-gray-light dark:bg-black-main shadow-lg;
 }
 /* ------------------------------------ Skills Section ------------------------------------*/
 .skills{
@@ -103,5 +118,5 @@ p,li{
 }
 /* ------------------------------------ Footer Section ------------------------------------*/
 .footer{
-  @apply bg-gray-light dark:bg-black-main w-full h-20
+  @apply bg-blue-main w-full h-20 text-white-main 
 }

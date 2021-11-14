@@ -2,6 +2,7 @@ import React from "react";
 import Timeline from "@material-ui/lab/Timeline";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Company from "./Company/Company";
+// import Slide from 'react-reveal/Fade';
 
 const theme = createMuiTheme({
   palette: {
@@ -30,9 +31,9 @@ function Timelines() {
       currently: true,
       role: [
         "Build E-Comerece Website",
-        "Fix bug issue in the projects.",
-        "Develop new user-facing features.",
-        "Build reusable code and libraries for future use.",
+        "Fixed bugs from existing website and improve web functionality.",
+        "Develop new user-facing features and interactive website.",
+        "Integrated service java technologies to php technologies",        
       ],
     },
     {
@@ -42,19 +43,19 @@ function Timelines() {
       currently: false,
       role: [
         "Build E-Comerece Website",
-        "Fix bug issue in the projects.",
+        "Fixed bugs from existing website and improve web functionality.",
         "Develop new user-facing features.",
         "Build reusable code and libraries for future use.",
       ],
     },
     {
       name: "IT Element Company Limited",
-      position: "Software Developer",
+      position: "Programmer",
       period: "August 2017 – April 2020",
       currently: false,
       role: [
         "Supporting fund management business such as fund selling agent and omnibus.",
-        "Fix bug issue in the projects.",
+        "Fixed bugs from existing website and improve web functionality.",
         "Build Core Function for use in the projects.",
         "Build Service for other systems.",
         "Migrate Data for New Site.",
@@ -63,7 +64,7 @@ function Timelines() {
     },
     {
       name: "IT Element Company Limited",
-      position: "Software Developer [ Intern ]",
+      position: "Programmer [ Intern ]",
       period: "June 2016 - August 2016",
       currently: false,
       role: [
@@ -76,14 +77,16 @@ function Timelines() {
 
   const companies = companiesProp.map((company, index) => {
     return (
-      <Company
-        key={index}
-        name={company.name}
-        position={company.position}
-        period={company.period}
-        role={company.role}
-        currently={company.currently}
-      />
+      // <Slide bottom>
+        <Company
+          key={index}
+          name={company.name}
+          position={company.position}
+          period={company.period}
+          role={company.role}
+          currently={company.currently}
+        />
+      // </Slide>
     );
   });
 

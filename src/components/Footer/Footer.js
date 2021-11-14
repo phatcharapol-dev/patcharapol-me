@@ -1,6 +1,6 @@
 import React from "react";
 
-const profileImg = `${process.env.PUBLIC_URL}/profile_img_2.png`;
+const profileImg = `${process.env.PUBLIC_URL}/prof-icon.png`;
 
 function Footer() {
   return (
@@ -11,7 +11,7 @@ function Footer() {
             <img src={profileImg} alt={"profile-img"} />
           </div>
           <div className="ml-4">
-            <p>
+            <p className="text-white-main">
               Created by{" "}
               <a
                 className="font-bold"

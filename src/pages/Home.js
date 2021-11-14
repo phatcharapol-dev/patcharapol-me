@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <Element name="hero" className="element">
-        <Hero />
+          <Hero />
       </Element>
       <Element name="about" className="element">
         <About />

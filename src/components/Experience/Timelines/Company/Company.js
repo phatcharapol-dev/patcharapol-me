@@ -24,9 +24,9 @@ function Company(props) {
       <TimelineContent className="mb-6">
         <div className="company-box">
           <h4>{props.name}</h4>
-          <p className="font-bold">{props.position}</p>
+          <p className="text-lg font-bold">{props.position}</p>
           <h5>{props.period}</h5>
-          <ul className="list-disc list-inside mt-2">{listRole}</ul>
+          <ul className="list-disc mt-2 ml-8 list-outside">{listRole}</ul>
         </div>
       </TimelineContent>
     </TimelineItem>

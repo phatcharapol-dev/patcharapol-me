@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import SocialGroup from "../About/SocialGroup/SocialGroup";
 import { ThemeContext } from "../Theme/ThemeContext";
+// import Fade from 'react-reveal/Fade';
 
 const bgVideoDark = `${process.env.PUBLIC_URL}/bg-video-dark.mp4`;
 const bgVideoLight = `${process.env.PUBLIC_URL}/bg-video-light.mp4`;
@@ -23,22 +24,24 @@ const Hero = () => {
       >
         <source src={bgVideo} type="video/mp4" />
       </video>
-      <div className="hero-content">
-        <div className="text-center">
-          <div className="md:w-60 w-48 m-auto">
-            <img
-              src={profileImg}
-              alt={"profile-img"}
-              className="profile-image"
-            />
+      {/* <Fade bottom> */}
+        <div className="hero-content">
+          
+            <div className="md:w-60 w-48 mt-20">
+              <img
+                src={profileImg}
+                alt={"profile-img"}
+                className="profile-image"
+              />
+            </div>
+            <div className="font-bold">
+              <h3 className="pt-8 text-white">Patcharaphol T</h3>
+              <h4 className="pb-5 text-gray-300">Software Developer</h4>
+            </div>
+            <SocialGroup />
           </div>
-          <div className="font-bold">
-            <h3 className="pt-8 text-white">Patcharaphol T</h3>
-            <h4 className="pb-5 text-gray-300">Software Developer</h4>
-          </div>
-          <SocialGroup />
-        </div>
-      </div>
+    
+      {/* </Fade> */}
     </section>
   );
 };

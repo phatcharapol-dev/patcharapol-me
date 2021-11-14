@@ -6,14 +6,14 @@ module.exports = {
       colors: {
         // Main Color
         "black-main": "#232931",
-        "blue-main": "#3fc1c9",
+        "blue-main": "#00adb5",
         "white-main": "#eeeeee",
 
         // For Dark Theme
         "gray-dark": "#393e46",
         // For White Theme
         "gray-light": "#F4FFFF",
-        "blue-light": "#E4FBFF",
+        "blue-light": "#e6f7f8",
       },
       screens: {
         xs: { max: "420px" },
@@ -32,7 +32,7 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      sans: ['"PT Sans"', "sans-serif"],
+      'sans': ['Roboto','Helvetica', 'Arial', 'sans-serif'],
     },
   },
   variants: {

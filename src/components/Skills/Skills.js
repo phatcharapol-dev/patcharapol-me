@@ -1,5 +1,6 @@
 import React from "react";
 import Skill from "./Skill/Skill";
+// import Fade from 'react-reveal/Fade';
 
 const skillsProp = [
   {
@@ -47,9 +48,11 @@ function Skills() {
           <div className="md:text-center text-left w-full mb-10">
             <h1>Skills Set</h1>
           </div>
-          <div className="flex flex-row flex-wrap justify-start w-full items-start">
-            {skills}
-          </div>
+          {/* <Fade bottom> */}
+            <div className="flex flex-row flex-wrap justify-start w-full items-start">
+              {skills}
+            </div>
+          {/* </Fade> */}
         </div>
       </div>
     </section>
